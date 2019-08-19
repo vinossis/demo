@@ -12,7 +12,7 @@ class Header extends PureComponent {
     addNewGame: false,
     authForm: false,
     registration: false,
-    isAuth: true,
+    isAuth: false,
   };
 
   handleAuthComplete = () => {
