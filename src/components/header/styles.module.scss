@@ -8,14 +8,36 @@
 .header_logo {
   margin-top: 25px;
   margin-left: 10px;
-  flex: 5;
+  flex: 3;
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover, a:visited {
+    color: black;
+  }
 }
 
 .header_profile {
-  max-width: 120px;
-  margin-top: 25px;
+  max-width: 200px;
+  margin-top: 17px;
   margin-left: 10px;
   flex: 1;
+  display: flex;
+  a {
+    margin-top: 10px;
+    text-decoration: none;
+    color: black;
+  }
+
+}
+
+.header_profile_not_auth {
+  margin-top: 15px;
+  margin-left: 10px;
+  flex: 1;
+  display: flex;
 }
 
 .header_add_new_game {
@@ -24,6 +46,7 @@
   justify-content: flex-end;
   padding-top: 20px;
   padding-right: 20px;
+
   button {
     width: 100px;
     height: 30px;
@@ -32,4 +55,26 @@
     border: none;
     cursor: pointer;
   }
+}
+
+.button_send {
+  width: 150px;
+  height: 35px;
+  background: #5078F2;
+  border-radius: 6px;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.button_logout {
+  width: 100px;
+  height: 35px;
+  background: #5078F2;
+  border-radius: 6px;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
 }
