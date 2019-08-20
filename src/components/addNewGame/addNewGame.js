@@ -25,7 +25,7 @@ class AddNewGame extends PureComponent {
         file: file,
         imagePreviewUrl: reader.result
       });
-    }
+    };
 
     reader.readAsDataURL(file);
 
@@ -44,7 +44,7 @@ class AddNewGame extends PureComponent {
   };
 
   handleAddGame = () => {
-    const { name, image, description,imagePreviewUrl } = this.state;
+    const { name, description, imagePreviewUrl } = this.state;
     const lastUpdate = Date.now();
     const makeAddGame = () => {
       Api.addNewGame(name, lastUpdate, imagePreviewUrl, description)
@@ -58,7 +58,7 @@ class AddNewGame extends PureComponent {
   };
 
   render() {
-    const { name, image, description, redir,imagePreviewUrl } = this.state;
+    const { name, image, description, redir, imagePreviewUrl } = this.state;
     return (
       !redir ?
         <div>
@@ -73,7 +73,10 @@ class AddNewGame extends PureComponent {
               type="file"
               onChange={(e) => this.handleChangeImage(e)}
             />
-            <img src={imagePreviewUrl} alt="" style={{width: '200px', heigth: '200px'}}/>
+            <img src={imagePreviewUrl} alt="" style={{
+              width: '200px',
+              heigth: '200px'
+            }} />
           </div>
           <div className={styles.input}>
             <label>Описание:</label>

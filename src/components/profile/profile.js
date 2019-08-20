@@ -13,9 +13,10 @@ class Profile extends PureComponent {
       .then((data) => {
         this.setState({ userInfo: data });
         this.setState({ loading: false });
-      }).catch((err)=>{
-        console.log(err)
-    });
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   }
 
   render() {

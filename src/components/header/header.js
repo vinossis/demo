@@ -16,8 +16,9 @@ class Header extends PureComponent {
   };
 
   handleAuthComplete = () => {
-    this.setState({ isAuth: !this.state.isAuth})
-  }
+    this.setState({ isAuth: !this.state.isAuth });
+  };
+
   handleChangeModal = () => {
     this.setState({ addNewGame: !this.state.addNewGame });
   };
@@ -75,7 +76,9 @@ class Header extends PureComponent {
         }
         {
           authForm ?
-            <Modal onCloseModal={this.handleAuthModal}><Auth handleAuthComplete={this.handleAuthComplete} hideModal={this.handleAuthModal}/></Modal> : null
+            <Modal onCloseModal={this.handleAuthModal}><Auth
+              handleAuthComplete={this.handleAuthComplete}
+              hideModal={this.handleAuthModal} /></Modal> : null
         }
 
         {

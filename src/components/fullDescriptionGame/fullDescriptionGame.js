@@ -36,12 +36,11 @@ class FullDescriptionGame extends PureComponent {
             <input disabled type="text" value={game.name} />
           </div>
           <div className={styles.input}>
-            <label>Лого</label>
-            <input disabled type="text" value={game.image} />
+            <img src={game.image} alt="" />
           </div>
           <div className={styles.input}>
             <label>Дата</label>
-            <input disabled type="text" value={game.lastUpdate} />
+            <input disabled type="text" value={new Date(game.lastUpdate).toLocaleString('eu')} />
           </div>
           <div className={styles.input}>
             <label>Описание:</label>

@@ -53,7 +53,10 @@ class Games extends PureComponent {
                   onMouseLeave={() => this.handleMouseLeave(key)}
                 >
                   <div className={styles.img}>
-                    <img src={item.image} alt=""  style={{width: '200px', heigth: '200px'}}/>
+                    <img src={item.image} alt="" style={{
+                      width: '200px',
+                      heigth: '200px'
+                    }} />
                   </div>
                   <div>
                     <p>
